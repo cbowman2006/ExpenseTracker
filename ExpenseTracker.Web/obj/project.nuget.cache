@@ -1,15 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pm+Fc4nLwuA7xzpGyGE2HESXPpLc6HtHj7EvvqpoABv2vx/4RJGh6HWM9d7uWXayXpRfo/dKCK4iM2u1wsNabQ==",
+  "dgSpecHash": "6p5xtWqHtrAy3yQmGX0VQ2LTmNGDgq34yHX/7Y2mA8tfpnOoVO8Q5UkeGLwfONSY1zCdEh7E1zcEl9mX1NQ3KA==",
   "success": true,
   "projectFilePath": "C:\\MSDev\\ExpenseTracker\\ExpenseTracker.Web\\ExpenseTracker.Web.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\cbowm\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\cbowm\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\cbowm\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\cbowm\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\cbowm\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\cbowm\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    "C:\\Users\\cbowm\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\6.0.6\\microsoft.aspnetcore.spaproxy.6.0.6.nupkg.sha512"
   ],
   "logs": []
 }
