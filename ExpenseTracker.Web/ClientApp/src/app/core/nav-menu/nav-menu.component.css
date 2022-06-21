@@ -1,0 +1,30 @@
+.app-title{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #fff;
+} 
+
+.app-nav .flex-spacer {
+    flex-grow: 1;
+  }
+  
+  .app-nav .align-content {
+    padding: 0 16px;
+  }
+
+  .mat-nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mat-nav-list .mat-list-item{
+    color: #D9D9D6;
+    width: auto;
+  }
+
+  .primarynav .mat-nav-list .mat-list-item .mat-list-item-content{
+    margin-right: 13px;
+    z-index: 2;
+  }

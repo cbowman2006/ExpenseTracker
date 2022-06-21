@@ -1,0 +1,34 @@
+<!-- <progress-spinner *ngIf="isLoading"></progress-spinner> -->
+<nav class="app-nav">
+  <ng-container>
+    <div class="app-header">
+       <header class="app-title"><a routerLink="/" aria-label="SFCR"></a>
+        <h1>Expense Tracker</h1>
+        <div class="flex-spacer"></div>
+      <button mat-button [matMenuTriggerFor]="usermenu" style="font-weight:normal">
+          <mat-icon>person</mat-icon>User Name<mat-icon>keyboard_arrow_down</mat-icon>
+          <!--put userService.curerntUser here-->
+        </button>
+        <mat-menu #usermenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <mat-icon>exit_to_app</mat-icon> Sign Out
+          </button>
+          <!--put sign out button here-->
+        </mat-menu>
+      </header>
+      <div>
+        
+      </div>
+      <mat-toolbar class="primarynav" color="primary">
+        <mat-nav-list>
+          <a mat-list-item routerLinkActive="active"routerLink="" [routerLinkActiveOptions]="{exact:true}">Home</a>
+          <a mat-list-item routerLinkActive="active"routerLink="">Expenses</a>
+          <a mat-list-item routerLinkActive="active"routerLink="">Categories</a>
+
+
+        </mat-nav-list>
+        <!--<mat-menu #admin_menu="matMenu" [overlapTrigger]="false">          <button mat-menu-item routerLink="admin/dashboard" routerLinkActive="active">Subadmin 1</button>          <button mat-menu-item routerLink="admin/table-editor" routerLinkActive="active">Subadmin 2</button>        </mat-menu>-->      
+      </mat-toolbar>
+    </div>
+    </ng-container>
+</nav>
