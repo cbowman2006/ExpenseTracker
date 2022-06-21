@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker.Web", "ExpenseTracker.Web\ExpenseTracker.Web.csproj", "{39A3BEA5-2B77-46A4-A3A8-1F69FF50DB4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker.Web", "ExpenseTracker.Web\ExpenseTracker.Web.csproj", "{D0DAD1D5-5B25-46ED-A15E-483C3D6BF917}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker.Data", "ExpenseTracker.Data\ExpenseTracker.Data.csproj", "{FC2AA5AA-FF5D-48B2-8174-35FE6A189BFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker.Data", "ExpenseTracker.Data\ExpenseTracker.Data.csproj", "{D65897AF-442C-40D3-BBD4-DCEF234773A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker.Service", "ExpenseTracker.Service\ExpenseTracker.Service.csproj", "{44B7B7BF-114F-4BC0-B011-BAA502971E11}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker.Service", "ExpenseTracker.Service\ExpenseTracker.Service.csproj", "{6A5C1E9B-3B5C-45B1-8E80-9A79C4752CB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,17 +18,17 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{39A3BEA5-2B77-46A4-A3A8-1F69FF50DB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39A3BEA5-2B77-46A4-A3A8-1F69FF50DB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39A3BEA5-2B77-46A4-A3A8-1F69FF50DB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39A3BEA5-2B77-46A4-A3A8-1F69FF50DB4F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FC2AA5AA-FF5D-48B2-8174-35FE6A189BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC2AA5AA-FF5D-48B2-8174-35FE6A189BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC2AA5AA-FF5D-48B2-8174-35FE6A189BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC2AA5AA-FF5D-48B2-8174-35FE6A189BFD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44B7B7BF-114F-4BC0-B011-BAA502971E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44B7B7BF-114F-4BC0-B011-BAA502971E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44B7B7BF-114F-4BC0-B011-BAA502971E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44B7B7BF-114F-4BC0-B011-BAA502971E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0DAD1D5-5B25-46ED-A15E-483C3D6BF917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0DAD1D5-5B25-46ED-A15E-483C3D6BF917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0DAD1D5-5B25-46ED-A15E-483C3D6BF917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0DAD1D5-5B25-46ED-A15E-483C3D6BF917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D65897AF-442C-40D3-BBD4-DCEF234773A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65897AF-442C-40D3-BBD4-DCEF234773A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65897AF-442C-40D3-BBD4-DCEF234773A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65897AF-442C-40D3-BBD4-DCEF234773A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A5C1E9B-3B5C-45B1-8E80-9A79C4752CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A5C1E9B-3B5C-45B1-8E80-9A79C4752CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A5C1E9B-3B5C-45B1-8E80-9A79C4752CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A5C1E9B-3B5C-45B1-8E80-9A79C4752CB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
