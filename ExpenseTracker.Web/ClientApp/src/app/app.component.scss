@@ -1,5 +1,12 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.container{
+
+.mat-nav-list .mat-list-item .mat-list-item-content {
+    padding: 0;
+  }
+.main-content-wrapper{
     min-height: 100%;
+    margin-bottom: -52px;
+    padding-bottom: 60px;
+    position: relative;
 }

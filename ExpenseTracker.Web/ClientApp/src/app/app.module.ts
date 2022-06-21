@@ -9,8 +9,9 @@ import { SharedModule } from './shared/shared.module';
 import { PreloadAllModules, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
+
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
     HomeComponent
    ],
