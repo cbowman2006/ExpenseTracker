@@ -6,11 +6,10 @@ import { RouterModule } from "@angular/router";
 
 
 @NgModule({
-  imports: [SharedModule, RouterModule],
-  declarations: [NavMenuComponent, FooterComponent],
-  providers: [],
-  entryComponents: [],
-  exports: [NavMenuComponent, FooterComponent]
+    imports: [SharedModule, RouterModule],
+    declarations: [NavMenuComponent, FooterComponent],
+    providers: [],
+    exports: [NavMenuComponent, FooterComponent]
 })
 
 export class CoreModule { }
