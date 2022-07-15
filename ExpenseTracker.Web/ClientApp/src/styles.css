@@ -28,3 +28,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding-bottom: 60px;
     position: relative;
 }
+
+.spinner-backdrop{
+  background: rgba(0,0,0,0.2);
+}
