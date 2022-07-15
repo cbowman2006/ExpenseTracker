@@ -24,7 +24,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 //import { PopupDialogComponent } from './popup-dialog/popup-dialog.component';
 //import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-//import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
+import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatTooltipModule } from '@angular/material/tooltip';
@@ -69,7 +69,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     declarations: [
     //PopupDialogComponent,
     //SafeHtmlPipe,
-    //ProgressSpinnerComponent,
+    ProgressSpinnerComponent,
     //LocationSearchComponent,
     //InfoSnackbarComponent
     ],
@@ -101,7 +101,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
         MatDatepickerModule,
         MatNativeDateModule,
         MatProgressSpinnerModule,
-        /*ProgressSpinnerComponent,*/
+        ProgressSpinnerComponent,
         MatRadioModule,
         MatTooltipModule,
         MatAutocompleteModule,

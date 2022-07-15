@@ -42,7 +42,7 @@ public class CategoryService : ICategoryService
                 {
                     CategoryId = c.CategoryId,
                     Name = c.Name
-                }).ToList() ?? new List<CategoryDto>();
+                }).ToList();
     }
 
     public CategoryDto UpdateCategory(CategoryDto updatedCategory)

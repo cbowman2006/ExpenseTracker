@@ -16,7 +16,12 @@ builder.Services.AddDbContext<ExpenseTrackerDbContext>(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddCors();
+builder.Services.AddCors(o => o.AddPolicy("default", builder =>
+{
+    builder.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+}));
 
 
 
@@ -31,10 +36,9 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseStaticFiles();
 app.UseRouting();
-
+app.UseCors("default");
 
 app.MapControllerRoute(
     name: "default",
