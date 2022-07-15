@@ -1,8 +1,25 @@
+using ExpenseTracker.Data;
+using ExpenseTracker.Service.Core;
+using ExpenseTracker.Service.Interface;
+using Microsoft.EntityFrameworkCore;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
+
+//Connect to DB
+var connectionString = builder.Configuration["NgpConnectionSetting"];
+builder.Services.AddDbContext<ExpenseTrackerDbContext>(options =>
+    options.UseNpgsql(connectionString));
+// Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddCors();
+
+
+
 
 var app = builder.Build();
 
@@ -14,6 +31,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseStaticFiles();
 app.UseRouting();
 
@@ -21,6 +39,7 @@ app.UseRouting();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");
+    
 
 app.MapFallbackToFile("index.html");;
 

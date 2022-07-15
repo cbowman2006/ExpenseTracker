@@ -1,3 +1,5 @@
+import { environment } from './../environments/environment';
+import { CategoryService } from './services/category.service';
 import { appRoutes } from './route';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
@@ -11,12 +13,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExpenseComponent } from './expense/expense.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
     HomeComponent,
-      ExpenseComponent
+      ExpenseComponent,
+      CategoryComponent
    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -27,7 +31,10 @@ import { ExpenseComponent } from './expense/expense.component';
     RouterModule.forRoot(appRoutes, { preloadingStrategy: PreloadAllModules, relativeLinkResolution: 'legacy', onSameUrlNavigation: 'reload', scrollPositionRestoration: 'enabled' }),
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    {provide: "ORIGIN_URL", useValue: environment.apiurl},
+    CategoryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
