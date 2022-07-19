@@ -16,6 +16,7 @@ builder.Services.AddDbContext<ExpenseTrackerDbContext>(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddCors(o => o.AddPolicy("default", builder =>
 {
     builder.AllowAnyOrigin()

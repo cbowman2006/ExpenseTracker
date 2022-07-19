@@ -19,11 +19,11 @@ createCategory(newCategory:Category):Observable<Category>{
 }
 
 UpdateCategory(updateCategory:Category):Observable<Category>{
-  return this.http.post<Category>(`${this.originUrl}/api/category/create`, updateCategory);
+  return this.http.post<Category>(`${this.originUrl}/api/category/update`, updateCategory);
 }
 
 deleteCategory(deleteCategory:Category):Observable<boolean>{
-  return this.http.post<boolean>(`${this.originUrl}/api/category/create`, deleteCategory);
+  return this.http.post<boolean>(`${this.originUrl}/api/category/delete`, deleteCategory);
 }
 
 }

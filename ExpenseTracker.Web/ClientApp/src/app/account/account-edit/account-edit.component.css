@@ -1,0 +1,11 @@
+.dialog-container{
+    margin-bottom: 20px;
+}
+.form-buttons{
+    text-align:center;
+}
+.form-buttons button{
+    width: 100px;
+    margin-left: 4px;
+    margin-right:4px;
+}

@@ -30,8 +30,7 @@ import { ExpenseComponent } from './expense/expense.component';
     BrowserAnimationsModule
   ],
   providers: [
-    {provide: "ORIGIN_URL", useValue: environment.apiurl},
-    CategoryService
+    {provide: "ORIGIN_URL", useValue: environment.apiurl}
   ],
   bootstrap: [AppComponent]
 })

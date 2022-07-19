@@ -1,0 +1,22 @@
+<div class="dialog-container">
+  <div mat-dialog-title>{{action}} Account
+    <span mat-dialog-close class="float-end">
+      <mat-icon>close</mat-icon>
+    </span>
+  </div>
+  <div class="container-fluid" *ngIf="action != 'Delete'">
+    <div class="row">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="account.accountName" required>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" *ngIf="action == 'Delete'">
+<div class="container-prompt">Are you sure you want to delete this Account <b>{{account.accountName}}</b></div>
+</div>
+<div class="form-buttons">
+  <button mat-dialog-close mat-raised-button color="secondary">Cancel</button>
+  <button mat-raised-button color="primary" (click)="doAction()" [disabled]="isFormVaild()">{{action}}</button>
+</div>
