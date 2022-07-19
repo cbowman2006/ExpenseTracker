@@ -41,8 +41,8 @@ namespace ExpenseTracker.Web.Controllers.Api
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"CreateCategories failed");
-                return StatusCode(500, $"CreateCategories failed");
+                _logger.LogError(ex, $"CreateCategory failed");
+                return StatusCode(500, $"CreateCategory failed");
             }
 
         }
@@ -56,8 +56,8 @@ namespace ExpenseTracker.Web.Controllers.Api
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"UpdateCategories failed");
-                return StatusCode(500, $"UpdateCategories failed");
+                _logger.LogError(ex, $"UpdateCategory failed");
+                return StatusCode(500, $"UpdateCategory failed");
             }
 
         }
@@ -71,8 +71,8 @@ namespace ExpenseTracker.Web.Controllers.Api
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"DeleteCategories failed");
-                return StatusCode(500, $"DeleteCategories failed");
+                _logger.LogError(ex, $"DeleteCategory failed");
+                return StatusCode(500, $"DeleteCategory failed");
             }
 
         }
