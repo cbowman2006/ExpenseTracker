@@ -15,20 +15,51 @@ code {
   border-color: #1861ac;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-.mat-nav-list .mat-list-item .mat-list-item-content {
-    padding: 0;
-  }
-  
-.main-content-wrapper{
-    min-height: 100%;
-    margin-bottom: -52px;
-    padding-bottom: 60px;
-    position: relative;
+html,
+body {
+  height: 100%;
 }
 
-.spinner-backdrop{
-  background: rgba(0,0,0,0.2);
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-nav-list .mat-list-item .mat-list-item-content {
+  padding: 0;
+}
+
+.main-content-wrapper {
+  min-height: 100%;
+  margin-bottom: -52px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.spinner-backdrop {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.center-cell {
+  text-align: center !important;
+}
+
+.action-cell {
+  text-align: center;
+  max-width: 275px;
+}
+
+.container-prompt {
+  margin: 16px;
+}
+
+.mat-dialog-title {
+  background-color: #d9d9d61a;
+  height: 50px;
+  padding: 10px 24px;
+  font-family: "GM Global Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold !important;
+  color: #3D3935 !important;
+  margin: 0 0 5px !important;
 }

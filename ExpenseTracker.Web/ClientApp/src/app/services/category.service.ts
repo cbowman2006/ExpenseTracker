@@ -14,15 +14,15 @@ getCategories(){
   return this.http.get<Category[]>(`${this.originUrl}/api/category/all`);
 }
 
-createCreate(newCategory:Category):Observable<Category>{
+createCategory(newCategory:Category):Observable<Category>{
   return this.http.post<Category>(`${this.originUrl}/api/category/create`, newCategory);
 }
 
-UpdateCreate(updateCategory:Category):Observable<Category>{
+UpdateCategory(updateCategory:Category):Observable<Category>{
   return this.http.post<Category>(`${this.originUrl}/api/category/create`, updateCategory);
 }
 
-deleteCreate(deleteCategory:Category):Observable<boolean>{
+deleteCategory(deleteCategory:Category):Observable<boolean>{
   return this.http.post<boolean>(`${this.originUrl}/api/category/create`, deleteCategory);
 }
 

@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit() {
-    console.log(this.accountHeadings.length)
   }
 
   expandContent(index:number){

@@ -8,6 +8,7 @@ namespace ExpenseTracker.Data
         public ExpenseTrackerDbContext(DbContextOptions<ExpenseTrackerDbContext> options) : base(options) {}
         public ExpenseTrackerDbContext() : base() {}
         public DbSet<Category> Categories {get;set;}
+        public DbSet<Account> Accounts {get;set;}
 
 
     }

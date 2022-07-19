@@ -2,10 +2,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ExpenseTracker.Data.Models
 {
-    public class Category
+    public class Account
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int CategoryId {get; set;}
-        public string Name {get; set;}
+        public int AccountId { get; set; }
+        public string AccountName { get; set; }
     }
+
 }

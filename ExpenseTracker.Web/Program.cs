@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 //Connect to DB
 var connectionString = builder.Configuration["NgpConnectionSetting"];
 builder.Services.AddDbContext<ExpenseTrackerDbContext>(options =>
-    options.UseNpgsql(connectionString));
+    options.UseNpgsql(connectionString).UseSnakeCaseNamingConvention(), ServiceLifetime.Scoped);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -36,9 +36,11 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("default");
+//app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseStaticFiles();
 app.UseRouting();
-app.UseCors("default");
+
 
 app.MapControllerRoute(
     name: "default",

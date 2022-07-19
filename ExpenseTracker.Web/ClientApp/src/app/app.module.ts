@@ -13,14 +13,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExpenseComponent } from './expense/expense.component';
-import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [		
     AppComponent,
     HomeComponent,
       ExpenseComponent,
-      CategoryComponent
    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

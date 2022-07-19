@@ -47,7 +47,7 @@ namespace ExpenseTracker.Web.Controllers.Api
 
         }
 
-        [HttpPost("create")]
+        [HttpPost("update")]
         public IActionResult UpdateCategory([FromBody] CategoryDto category)
         {
             try
@@ -62,7 +62,7 @@ namespace ExpenseTracker.Web.Controllers.Api
 
         }
 
-        [HttpPost("create")]
+        [HttpPost("delete")]
         public IActionResult DeleteCategory([FromBody] CategoryDto category)
         {
             try
