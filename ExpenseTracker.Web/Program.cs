@@ -1,6 +1,5 @@
 using ExpenseTracker.Data;
-using ExpenseTracker.Service.Core;
-using ExpenseTracker.Service.Interface;
+using ExpenseTracker.Web.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -15,8 +14,7 @@ builder.Services.AddDbContext<ExpenseTrackerDbContext>(options =>
     options.UseNpgsql(connectionString).UseSnakeCaseNamingConvention(), ServiceLifetime.Scoped);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.LoadServices();
 builder.Services.AddCors(o => o.AddPolicy("default", builder =>
 {
     builder.AllowAnyOrigin()
@@ -38,7 +36,6 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("default");
-//app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseStaticFiles();
 app.UseRouting();
 
